@@ -1,1 +1,3 @@
-insert well-formatted helpfulness here
+# Abstract Base Class
+
+* npm install abstract-base-class
