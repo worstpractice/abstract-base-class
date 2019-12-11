@@ -43,7 +43,7 @@ describe(`the implementation 'Shiba'`, () => {
     });
   });
 
-  describe(`when instantiated indirectly ('bamboozled')`, () => {
+  describe(`when instantiated indirectly`, () => {
 
     it(`should throw a TypeError`, () => {
       expect(() => {

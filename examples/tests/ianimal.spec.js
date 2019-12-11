@@ -25,7 +25,7 @@ describe(`the example abstract interface 'IAnimal'`, () => {
     });
   });
 
-  describe(`when instantiated indirectly ('bamboozled')`, () => {
+  describe(`when instantiated indirectly`, () => {
 
     it(`should still be abstract`, () => {
       expect(() => {
@@ -34,9 +34,3 @@ describe(`the example abstract interface 'IAnimal'`, () => {
     });
   });
 });
-
-    // // we expect ABC to figure in the prototype chain of 'this'
-    // if (!(this instanceof ABC)) {
-    //   const message = `UNDEFINED BEHAVIOR: How could this be?`
-    //   throw new TypeError(message);
-    // }

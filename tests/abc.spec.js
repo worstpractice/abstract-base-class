@@ -218,13 +218,9 @@ describe(`the abstract base class 'ABC'`, () => {
                 new ConcreteImplementer();
               }).toThrowError(TypeError);
             });
-
-          //   describe(`once having implemented its parent interface`, () => {
-
           });
         });
       });
     });
   });
 });
-

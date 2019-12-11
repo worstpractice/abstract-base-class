@@ -1,6 +1,6 @@
 {
   "name": "abstract-base-class",
-  "version": "1.1.1",
+  "version": "1.1.4",
   "description": "a fully-featured, abstract base class (ABC) implementation for JavaScript",
   "devDependencies": {
     "gitignore": "^0.6.0",
@@ -13,7 +13,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "clear && jest --verbose --coverage"
+    "test": "jest --verbose --coverage"
   },
   "repository": {
     "type": "git",

@@ -3,6 +3,7 @@ const { ABC } = require('./../../abc.js');
 const { IAnimal } = require('./../../examples/ianimal.js');
 const { Dog } = require('./../../examples/dog.js');
 
+
 describe(`the concrete implementation 'Dog'`, () => {
 
   describe(`when examined prototypically`, () => {
@@ -41,12 +42,12 @@ describe(`the concrete implementation 'Dog'`, () => {
     });
   });
 
-  describe(`when instantiated indirectly ('bamboozled')`, () => {
+  describe(`when instantiated indirectly`, () => {
 
     it(`should throw a TypeError`, () => {
       expect(() => {
         new Dog.constructor();
-      }).toThrowError(TypeError);  // This error message should really be the INTERFACE cannot-new message
+      }).toThrowError(TypeError);  // TODO: This error message should really be the INTERFACE cannot-new message
     });
   });
 });

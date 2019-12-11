@@ -6,10 +6,13 @@ class IAnimal extends ABC {
   constructor() {
     super();
   }
-  foo() {}
+  
+  eat(item=`food`) {
+    return `${this.constructor.name} ate some ${item}!`;
+  }
 
-  [Symbol]() {
-    console.log(`indeed`);
+  sleep(minutes=30) {
+    return `${this.constructor.name} slept for ${duration} minute${duration === 1 ? `` : `s`}!`;
   }
 }
 

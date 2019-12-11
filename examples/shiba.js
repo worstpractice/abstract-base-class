@@ -6,15 +6,22 @@ class Shiba extends Dog {
   constructor() {
     super();
   }
-  foo() {}
 
-  [Symbol]() {
-    console.log(`oh you`);
+  eat(item=`dogfood`) {
+    return `${this.constructor.name} ate some ${item}!`;
   }
 
-  three(a, b, c) {}
+  sleep(minutes=20) {
+    return `${this.constructor.name} slept for ${duration} minute${duration === 1 ? `` : `s`}!`;
+  }
 
-  two(a, b) {}
+  bark() {
+    return `${this.constructor.name} barked!`;
+  }
+
+  want(foodItem=`people food`) {
+    return `${this.constructor.name} gazes longingly at ${foodItem}!`;
+  }
 }
 
 module.exports = { Shiba };
